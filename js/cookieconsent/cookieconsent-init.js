@@ -63,14 +63,14 @@ cc.run({
     languages: {
         'en': {
             consent_modal: {
-                title: cookie + ' We use cookies! ',
-                description: '<a class="cc-link" href="https://sh-tatsuno.github.io/snippet_sample/policy.html">contact me</a> Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+//                 title: cookie + ' We use cookies! ',
+                description: '電子調達ポータルでCookie等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
                 primary_btn: {
-                    text: 'Accept all',
+                    text: '同意する',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
                 },
                 secondary_btn: {
-                    text: 'Reject all',
+                    text: '同意しない',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
                 }
             },
