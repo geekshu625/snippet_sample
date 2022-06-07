@@ -64,7 +64,7 @@ cc.run({
         'en': {
             consent_modal: {
 //                 title: cookie + ' We use cookies! ',
-                description: '電子調達ポータルでCookie等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                description: '電子調達ポータルでCookie等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">個人情報保護について</button>',
                 primary_btn: {
                     text: '同意する',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
