@@ -61,13 +61,13 @@ cc.run({
         'ja': {
             consent_modal: { // 同意バナーの文言記入箇所
                 description: '電子調達ポータルでクッキー等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">個人情報保護について</button>',
-                primary_btn: {
-                    text: '同意する',
-                    role: 'accept_all'              // 'accept_selected' or 'accept_all'
-                },
                 secondary_btn: {
                     text: '同意しない',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                },
+                primary_btn: {
+                    text: '同意する',
+                    role: 'accept_all'              // 'accept_selected' or 'accept_all'
                 }
             },
             settings_modal: { // 同意詳細ポップアップの文言記入箇所
