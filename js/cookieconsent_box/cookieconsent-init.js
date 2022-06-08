@@ -136,7 +136,7 @@ cc.run({
                 ]
             }
         },
-        'jp': {
+        'ja': {
             consent_modal: {
                 title: 'クッキーの表示',
                 description: 'テックタッチのクッキー説明です <button type="button" data-cc="c-settings" class="cc-link">同意の詳細確認</button>',
