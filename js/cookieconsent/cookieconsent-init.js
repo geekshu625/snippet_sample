@@ -12,7 +12,7 @@ cc.run({
     cookie_name: 'cc_cookie',                   // default: 'cc_cookie'
     cookie_expiration : 365,                    // default: 182
     page_scripts: true,                         // default: false
-    auto_language: 'browser',                     // default: null; could also be 'browser' or 'document'
+    auto_language: 'document',                     // default: null; could also be 'browser' or 'document'
 
     // autorun: true,                           // default: true
     // delay: 0,                                // default: 0
