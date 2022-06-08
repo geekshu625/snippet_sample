@@ -61,7 +61,7 @@ cc.run({
     },
 
     languages: {
-        'en': {
+        'ja': {
             consent_modal: {
 //                 title: cookie + ' We use cookies! ',
                 description: '電子調達ポータルでCookie等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">個人情報保護について</button>',
@@ -136,7 +136,7 @@ cc.run({
                 ]
             }
         },
-        'ja': {
+        'en': {
             consent_modal: {
                 title: 'クッキーの表示',
                 description: 'テックタッチのクッキー説明です <button type="button" data-cc="c-settings" class="cc-link">同意の詳細確認</button>',
