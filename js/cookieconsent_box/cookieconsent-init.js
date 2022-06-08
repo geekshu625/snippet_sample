@@ -28,7 +28,7 @@ cc.run({
     gui_options: {
         consent_modal: {
             layout: 'box',                      // box,cloud,bar
-            position: 'bottom center',           // bottom,middle,top + left,right,center
+            position: 'bottom left',           // bottom,middle,top + left,right,center
             transition: 'slide'                 // zoom,slide
         },
         settings_modal: {
