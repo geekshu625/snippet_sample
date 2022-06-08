@@ -7,7 +7,7 @@ var cc = initCookieConsent();
 
 // run plugin with config object
 cc.run({
-    current_lang : 'jp',
+    current_lang : 'ja',
     autoclear_cookies : true,                   // default: false
     cookie_name: 'cc_cookie',                   // default: 'cc_cookie'
     cookie_expiration : 365,                    // default: 182
