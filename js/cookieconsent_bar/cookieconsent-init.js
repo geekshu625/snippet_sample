@@ -29,7 +29,7 @@ cc.run({
             transition: 'slide'                 
         },
         settings_modal: {
-            layout: 'bar',                      // box,bar
+            layout: 'box',                      // box,bar
             position: 'left',                   // right,left (available only if bar layout selected)
             transition: 'slide'                 // zoom,slide
         }
@@ -60,7 +60,7 @@ cc.run({
     languages: {
         'ja': {
             consent_modal: { // 同意バナーの文言記入箇所
-                description: 'お電子調達ポータルでクッキー等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">個人情報保護について</button>',
+                description: '電子調達ポータルでクッキー等を使用して、アクセス状況の分析や利便性向上を行っています。同意いただける方は「同意する」をクリックして下さい。 <button type="button" data-cc="c-settings" class="cc-link">個人情報保護について</button>',
                 secondary_btn: {
                     text: '同意しない',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
@@ -71,7 +71,7 @@ cc.run({
                 }
             },
             settings_modal: { // 同意詳細ポップアップの文言記入箇所
-//                 title: logo,
+                title: ,
                 save_settings_btn: '設定を保存する',
                 accept_all_btn: '同意する',
                 reject_all_btn: '同意しない',
