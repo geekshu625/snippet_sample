@@ -57,7 +57,7 @@
     font-variant: normal;
     font-weight: inherit;
     font-family: inherit;
-	line-height: 1.2;
+	  line-height: 1.2;
     font-size: 1em;
     transition: none;
     animation: none;
@@ -81,8 +81,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    color: #2d4156;
-    color: var(--cc-text);
+    color: #000;
 }
 
 .cc_div .c-bn,
@@ -206,7 +205,7 @@
 
 #cm{
     font-family: inherit;
-    padding: 1.1em 1.8em 1.4em 1.8em;
+    padding: 32px;
     position: fixed;
     z-index: 1;
     background: #fff;
@@ -215,12 +214,13 @@
     width: 100%;
     bottom: 1.250em;
     right: 1.250em;
-    box-shadow: 0 0.625em 1.875em #000000;
-    box-shadow: 0 0.625em 1.875em rgba(2, 2, 3, 0.28);
     opacity: 0;
     visibility: hidden;
     transform: scale(.95);
     line-height: initial;
+    border-radius: 0;
+    border: solid 1px #d5d5d5;
+    box-shadow: 0px 3px 1px #d5d5d5;
 }
 
 /** fix https://github.com/orestbida/cookieconsent/issues/94 **/
@@ -238,32 +238,29 @@
 }
 
 #c-txt{
-    font-size: 0.9em;
+    font-size: 14px;
     line-height: 1.5em;
 }
 
 .cc_div #c-bns{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     margin-top: 1.4em;
 }
 
 .cc_div .c-bn{
-    color: #40505a;
-    color: var(--cc-btn-secondary-text);
-    background: #e5ebef;
-    background: var(--cc-btn-secondary-bg);
+    color: #707070;
     padding: 1em 1.7em;
     display: inline-block;
     cursor: pointer;
-    font-size: 0.82em;
+    font-size: 14px;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
     user-select: none;
     text-align: center;
-    border-radius: 4px;
     flex: 1;
 }
 
@@ -271,7 +268,7 @@
 #s-cnt button + button,
 #s-c-bn{
     float: right;
-    margin-left: 1em;
+    margin-right: 1em;
 }
 
 #s-cnt #s-rall-bn{
@@ -495,28 +492,24 @@ CookieConsent settings modal
 }
 
 .cc_div .cc-link{
-    color: #253b48;
-    color: var(--cc-btn-primary-bg);
-    border-bottom: 1px solid #253b48;
-    border-color: var(--cc-btn-primary-bg);
-    display: inline;
+    color: #3E6EC8;
+    display: block;
     padding-bottom: 0;
     text-decoration: none;
     cursor: pointer;
-    font-weight: 600;
+    line-height: 1.5;
+    margin-top: 8px;
 }
 
 .cc_div .cc-link:hover,
 .cc_div .cc-link:active{
-    border-color: transparent;
+    text-decoration: underline;
 }
 
 #c-bns button:first-child,
 #s-bns button:first-child{
     color: #fff;
-    color: var(--cc-btn-primary-text);
-    background: #253b48;
-    background: var(--cc-btn-primary-bg);
+    background: #CC4409;
 }
 
 #c-bns.swap button:first-child{
@@ -544,14 +537,12 @@ CookieConsent settings modal
 #s-bns button:first-child:hover,
 #c-bns.swap button:last-child:active,
 #c-bns.swap button:last-child:hover{
-    background: #1d2e38;
-    background: var(--cc-btn-primary-hover-bg);
+    background: #BC3E08;
 }
 
 #c-bns.swap button:first-child:active,
 #c-bns.swap button:first-child:hover{
     background: #d8e0e6;
-    background: var(--cc-btn-secondary-hover-bg);
 }
 
 #s-hdr{
@@ -620,7 +611,7 @@ CookieConsent settings modal
         background: transparent;
         border-radius: 0 0.250em 0.250em 0;
     }
-    
+
     #s-bl::-webkit-scrollbar-thumb{
         border: 0.25em solid var(--cc-bg);
         background: #cfd5db;
@@ -653,7 +644,7 @@ CookieConsent settings modal
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;  
+    user-select: none;
     vertical-align: middle;
 }
 
@@ -737,7 +728,7 @@ CookieConsent settings modal
     background: var(--cc-cookie-category-block-bg-hover);
 }
 
-#s-bl table { 
+#s-bl table {
     text-align: left;
     border-collapse: collapse;
     width: 100%;
@@ -746,8 +737,8 @@ CookieConsent settings modal
     overflow: hidden;
 }
 
-#s-bl td, 
-#s-bl th { 
+#s-bl td,
+#s-bl th {
     padding: 0.8em 0.625em;
     text-align: left;
     vertical-align: top;
@@ -755,7 +746,7 @@ CookieConsent settings modal
     padding-left: 1.2em;
 }
 
-#s-bl th { 
+#s-bl th {
 	font-family: inherit;
     padding: 1.2em 1.2em;
 }
@@ -1013,16 +1004,20 @@ html.force--consent.show--consent body{
     bottom: 0;
     border-radius: 0;
     position: fixed;
-    padding: 2em;
+    padding: 32px 56px;
 }
 
 #cm.bar #c-inr{
-    max-width: 32em;
+    max-width: 80%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cm.bar #c-bns{
-    max-width: 33.75em;
+    flex: 0 0 320px;
+    margin-left: 32px;
 }
 
 #cm.bar #cs{
@@ -1062,18 +1057,18 @@ html.force--consent.show--consent body{
 }
 
 /* Force table to not be like tables anymore */
-.cc_div .bar #s-bl table, 
-.cc_div .bar #s-bl thead, 
-.cc_div .bar #s-bl tbody, 
-.cc_div .bar #s-bl th, 
-.cc_div .bar #s-bl td, 
+.cc_div .bar #s-bl table,
+.cc_div .bar #s-bl thead,
+.cc_div .bar #s-bl tbody,
+.cc_div .bar #s-bl th,
+.cc_div .bar #s-bl td,
 .cc_div .bar #s-bl tr,
-.cc_div .bar #s-cnt{ 
-    display: block; 
+.cc_div .bar #s-cnt{
+    display: block;
 }
 
 /* Hide table headers (but not display: none;, for accessibility) */
-.cc_div .bar #s-bl thead tr{ 
+.cc_div .bar #s-bl thead tr{
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -1084,14 +1079,14 @@ html.force--consent.show--consent body{
     border-color: var(--cc-cookie-table-border);
 }
 
-.cc_div .bar #s-bl td { 
+.cc_div .bar #s-bl td {
     /* Behave  like a "row" */
     border: none;
     position: relative;
-    padding-left: 35%; 
+    padding-left: 35%;
 }
 
-.cc_div .bar #s-bl td:before { 
+.cc_div .bar #s-bl td:before {
     position: absolute;
     left: 1em;
     padding-right: 0.625em;
@@ -1216,15 +1211,15 @@ html.force--consent.show--consent body{
     .cc_div .bar #s-bl{
 		padding: 1.3em;
     }
-    
+
 	#s-hdr,
     .cc_div .bar #s-hdr{
         padding: 0 1.3em;
     }
 
     /** dynamic table layout **/
-    #s-bl table { 
-        width: 100%; 
+    #s-bl table {
+        width: 100%;
     }
 
     #s-inr.bns-t{
@@ -1246,18 +1241,18 @@ html.force--consent.show--consent body{
     }
 
     /* Force table to not be like tables anymore */
-    #s-bl table, 
-    #s-bl thead, 
-    #s-bl tbody, 
-    #s-bl th, 
-    #s-bl td, 
+    #s-bl table,
+    #s-bl thead,
+    #s-bl tbody,
+    #s-bl th,
+    #s-bl td,
     #s-bl tr,
-    #s-cnt{ 
-        display: block; 
+    #s-cnt{
+        display: block;
     }
 
     /* Hide table headers (but not display: none;, for accessibility) */
-    #s-bl thead tr{ 
+    #s-bl thead tr{
         position: absolute;
         top: -9999px;
         left: -9999px;
@@ -1268,14 +1263,14 @@ html.force--consent.show--consent body{
         border-color: var(--cc-cookie-table-border);
     }
 
-    #s-bl td { 
+    #s-bl td {
         /* Behave  like a "row" */
         border: none;
         position: relative;
-        padding-left: 35%; 
+        padding-left: 35%;
     }
 
-    #s-bl td:before { 
+    #s-bl td:before {
         position: absolute;
         left: 1em;
         padding-right: 0.625em;

@@ -71,7 +71,7 @@ cc.run({
                 }
             },
             settings_modal: { // 同意詳細ポップアップの文言記入箇所
-                title: ,
+                title: "",
                 save_settings_btn: '設定を保存する',
                 accept_all_btn: '同意する',
                 reject_all_btn: '同意しない',
